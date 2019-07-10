@@ -1,0 +1,36 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target _turtlesim_generate_messages_check_deps_TeleportRelative
+[  0%] Built target _turtlesim_generate_messages_check_deps_Kill
+[  0%] Built target _turtlesim_generate_messages_check_deps_SetPen
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target _turtlesim_generate_messages_check_deps_Spawn
+[  0%] Built target _turtlesim_generate_messages_check_deps_Pose
+[  0%] Built target _turtlesim_generate_messages_check_deps_TeleportAbsolute
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target _turtlesim_generate_messages_check_deps_Color
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_eus
+[ 14%] Built target turtlesim_generate_messages_cpp
+[ 14%] Built target geometry_msgs_generate_messages_eus
+[ 32%] Built target turtlesim_generate_messages_py
+[ 46%] Built target turtlesim_generate_messages_lisp
+[ 62%] Built target turtlesim_generate_messages_eus
+[ 76%] Built target turtlesim_generate_messages_nodejs
+[ 76%] Built target turtlesim_gencpp
+[35m[1mScanning dependencies of target turtlesim_node[0m
+[ 76%] Built target turtlesim_generate_messages
+[ 80%] Built target mimic
+[ 84%] Built target turtle_teleop_key
+[ 88%] Built target draw_square
+[ 90%] [32mBuilding CXX object CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable /home/alfredo/turtlesim/devel/.private/turtlesim/lib/turtlesim/turtlesim_node[0m
+[100%] Built target turtlesim_node

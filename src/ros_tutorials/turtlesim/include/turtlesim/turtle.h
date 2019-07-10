@@ -95,6 +95,8 @@ private:
   double orientazione=0;
   int a_vecio=0;
   int b_vecio=0;
+  int xrelativa=100;
+  int yrelativa=1500;
 
   ros::Subscriber velocity_sub_;
   ros::Subscriber orientation_sub;

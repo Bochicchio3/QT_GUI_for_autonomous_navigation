@@ -82,11 +82,9 @@ orientazione=point2->z;
 
 void Turtle::poseCallback(const geometry_msgs::Point::ConstPtr& point)
 {
-
+if (point->x ==0 &&  point->y==0){return;}
 a=point->x;
 b=point->y;
-ROS_INFO("Spawning at position x=[%f], y=[%f]", a,b);
-
 }
 
 
@@ -214,7 +212,7 @@ bool Turtle::update(double dt, QPainter& path_painter, const QImage& path_image,
     {
 
       path_painter.setPen(pen_);
-      path_painter.drawLine(pos_ , old_pos);
+      path_painter.drawLine(a+xrelativa,-b+yrelativa, a_vecio+xrelativa,-b_vecio+yrelativa );
       ROS_INFO("DISEGNOSTOaltroCAZZO");
 
     }
@@ -234,23 +232,23 @@ void Turtle::paint(QPainter& painter)
   b_vecio=pos_.ry();
   pos_.rx() = a;
   pos_.ry() = b;
-  painter.drawLine(a,b, a_vecio,b_vecio );
+  painter.drawLine(a+xrelativa,-b+yrelativa, a_vecio+xrelativa,-b_vecio+yrelativa );
   rotateImage();
 
   // p.rx() -= 0.5 * turtle_rotated_image_.width();
   // p.ry() -= 0.5 * turtle_rotated_image_.height();
 
-  painter.drawImage(a,b, turtle_rotated_image_);
-  painter.drawEllipse(int(wayx),int(wayy), 100, 100);
+  painter.drawImage(a+xrelativa,-b+yrelativa, turtle_rotated_image_);
+  painter.drawEllipse(int(wayx)+xrelativa,-int(wayy)+yrelativa, 100, 100);
   painter.setFont(QFont("Arial", 20));
-  QRect rectangle1 = QRect(int(wayx)+100, int(wayy)+100, 400, 400);
+  QRect rectangle1 = QRect(700, 1610, 400, 400);
   QString s = QString::number(wayx);
   QString s2 = QString::number(wayy);
   QString x = "Current waypoint: (";
   QString y = ",";
   QString s3 = ")";
   s=x.append(s.append(y.append(s2.append(s3))));
-  QRect rectangle2 = QRect(int(a)+100, int(b)+100, 400, 400);
+  QRect rectangle2 = QRect(100, 1610, 400, 400);
   QString as = QString::number(a);
   QString as2 = QString::number(b);
   QString ax = "Current position: (";
@@ -260,6 +258,13 @@ void Turtle::paint(QPainter& painter)
   // Qstring textfinale=  text.append(s.append(text3.append(s2.append(text2))));
   painter.drawText(rectangle1 ,s);
   painter.drawText(rectangle2 ,as);
+  painter.drawLine(100,1600,1600,1600);
+    painter.drawLine(1600,100,1600,1600);
+      painter.drawLine(100,100,100,1600);
+        painter.drawLine(1600,100,100,100);
+  QRect rectangle3 = QRect(1300, 1610, 400, 400);
+  QString as33 = "Width: 15m x 15m";
+  painter.drawText(rectangle3 ,as33);
 
 }
 

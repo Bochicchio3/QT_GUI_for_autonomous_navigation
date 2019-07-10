@@ -1,0 +1,38 @@
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp: In member function ‘void turtlesim::Turtle::poseCallback(const ConstPtr&)’:
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:85:35: error: break statement not within loop or switch
+ if (point->x ==0 &&  point->y==0){break;}
+                                   ^~~~~
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp: In member function ‘void turtlesim::Turtle::paint(QPainter&)’:
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:244:49: error: no matching function for call to ‘QRect::QRect(int)’
+   QRect rectangle1 = QRect((400, 1500, 400, 400));
+                                                 ^
+In file included from /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:45:0,
+                 from /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:46,
+                 from /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage:1,
+                 from /home/alfredo/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:49,
+                 from /home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:30:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:184:25: note: candidate: constexpr QRect::QRect(int, int, int, int)
+ Q_DECL_CONSTEXPR inline QRect::QRect(int aleft, int atop, int awidth, int aheight) Q_DECL_NOTHROW
+                         ^~~~~
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:184:25: note:   candidate expects 4 arguments, 1 provided
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:190:25: note: candidate: constexpr QRect::QRect(const QPoint&, const QSize&)
+ Q_DECL_CONSTEXPR inline QRect::QRect(const QPoint &atopLeft, const QSize &asize) Q_DECL_NOTHROW
+                         ^~~~~
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:190:25: note:   candidate expects 2 arguments, 1 provided
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:187:25: note: candidate: constexpr QRect::QRect(const QPoint&, const QPoint&)
+ Q_DECL_CONSTEXPR inline QRect::QRect(const QPoint &atopLeft, const QPoint &abottomRight) Q_DECL_NOTHROW
+                         ^~~~~
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:187:25: note:   candidate expects 2 arguments, 1 provided
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:60:22: note: candidate: constexpr QRect::QRect()
+     Q_DECL_CONSTEXPR QRect() Q_DECL_NOTHROW : x1(0), y1(0), x2(-1), y2(-1) {}
+                      ^~~~~
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:60:22: note:   candidate expects 0 arguments, 1 provided
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:57:21: note: candidate: constexpr QRect::QRect(const QRect&)
+ class Q_CORE_EXPORT QRect
+                     ^~~~~
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:57:21: note:   no known conversion for argument 1 from ‘int’ to ‘const QRect&’
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:57:21: note: candidate: constexpr QRect::QRect(QRect&&)
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h:57:21: note:   no known conversion for argument 1 from ‘int’ to ‘QRect&&’
+make[2]: *** [CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o] Error 1
+make[1]: *** [CMakeFiles/turtlesim_node.dir/all] Error 2
+make: *** [all] Error 2

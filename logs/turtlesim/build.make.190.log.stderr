@@ -1,0 +1,17 @@
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp: In member function ‘void turtlesim::Turtle::paint(QPainter&)’:
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:265:9: error: redeclaration of ‘QRect rectangle2’
+   QRect rectangle2 = QRect(1300, 1610, 400, 400);
+         ^~~~~~~~~~
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:251:9: note: ‘QRect rectangle2’ previously declared here
+   QRect rectangle2 = QRect(100, 1610, 400, 400);
+         ^~~~~~~~~~
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:267:20: error: ‘rectangle3’ was not declared in this scope
+   painter.drawText(rectangle3 ,as33);
+                    ^~~~~~~~~~
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:267:20: note: suggested alternative: ‘rectangle2’
+   painter.drawText(rectangle3 ,as33);
+                    ^~~~~~~~~~
+                    rectangle2
+make[2]: *** [CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o] Error 1
+make[1]: *** [CMakeFiles/turtlesim_node.dir/all] Error 2
+make: *** [all] Error 2
