@@ -1,0 +1,8 @@
+prefix=/home/alfredo/turtlesim/install
+
+Name: turtlesim
+Description: Description of turtlesim
+Version: 0.9.1
+Cflags: -I/home/alfredo/turtlesim/install/include
+Libs: -L/home/alfredo/turtlesim/install/lib 
+Requires: geometry_msgs message_runtime std_msgs std_srvs

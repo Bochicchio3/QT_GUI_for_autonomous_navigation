@@ -1,0 +1,6 @@
+devel_space: /home/alfredo/turtlesim/devel
+install: false
+install_space: /home/alfredo/turtlesim/install
+profile: default
+source_space: /home/alfredo/turtlesim/src
+workspace: /home/alfredo/turtlesim

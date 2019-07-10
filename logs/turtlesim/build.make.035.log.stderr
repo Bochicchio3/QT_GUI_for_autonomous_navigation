@@ -1,0 +1,12 @@
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp: In constructor ‘turtlesim::Turtle::Turtle(const ros::NodeHandle&, const QImage&, const QPointF&, float)’:
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:61:3: error: ‘waypoint_sub’ was not declared in this scope
+   waypoint_sub=nh_.subscribe("waypoint", 1, &Turtle::waypointCallback, this);
+   ^~~~~~~~~~~~
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:61:3: note: suggested alternative: ‘pose_sub’
+   waypoint_sub=nh_.subscribe("waypoint", 1, &Turtle::waypointCallback, this);
+   ^~~~~~~~~~~~
+   pose_sub
+make[2]: *** [CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/turtlesim_node.dir/all] Error 2
+make: *** [all] Error 2

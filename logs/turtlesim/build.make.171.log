@@ -1,0 +1,84 @@
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _turtlesim_generate_messages_check_deps_TeleportRelative
+[  0%] Built target _turtlesim_generate_messages_check_deps_TeleportAbsolute
+[  0%] Built target _turtlesim_generate_messages_check_deps_Kill
+[  0%] Built target _turtlesim_generate_messages_check_deps_Pose
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target _turtlesim_generate_messages_check_deps_SetPen
+[  0%] Built target _turtlesim_generate_messages_check_deps_Spawn
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _turtlesim_generate_messages_check_deps_Color
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[ 14%] Built target turtlesim_generate_messages_cpp
+[ 14%] Built target std_srvs_generate_messages_eus
+[ 28%] Built target turtlesim_generate_messages_lisp
+[ 28%] Built target geometry_msgs_generate_messages_eus
+[ 46%] Built target turtlesim_generate_messages_py
+[ 60%] Built target turtlesim_generate_messages_nodejs
+[ 60%] Built target turtlesim_gencpp
+[ 76%] Built target turtlesim_generate_messages_eus
+[35m[1mScanning dependencies of target turtlesim_node[0m
+[ 80%] Built target mimic
+[ 84%] Built target draw_square
+[ 88%] Built target turtle_teleop_key
+[ 88%] Built target turtlesim_generate_messages
+[ 90%] [32mBuilding CXX object CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o[0m
+In file included from /opt/ros/melodic/include/ros/ros.h:40:0,
+                 from /home/alfredo/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:35,
+                 from /home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:30:
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp: In member function ‘void turtlesim::Turtle::paint(QPainter&)’:
+/opt/ros/melodic/include/ros/console.h:348:176: warning: format ‘%f’ expects argument of type ‘double’, but argument 8 has type ‘int’ [-Wformat=]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+                                                                                                                                                                                ^
+/opt/ros/melodic/include/ros/console.h:351:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/melodic/include/ros/console.h:387:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/melodic/include/ros/console.h:572:35: note: in expansion of macro ‘ROS_LOG_COND’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+                                   ^~~~~~~~~~~~
+/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       ^~~~~~~
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:244:3: note: in expansion of macro ‘ROS_INFO’
+   ROS_INFO("VECCHIA POSA %f %f",a_vecio),b_vecio);
+   ^
+/opt/ros/melodic/include/ros/console.h:348:176: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+                                                                                                                                                                                ^
+/opt/ros/melodic/include/ros/console.h:351:5: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(NULL, __VA_ARGS__)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/melodic/include/ros/console.h:387:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/ros/melodic/include/ros/console.h:572:35: note: in expansion of macro ‘ROS_LOG_COND’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+                                   ^~~~~~~~~~~~
+/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       ^~~~~~~
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:244:3: note: in expansion of macro ‘ROS_INFO’
+   ROS_INFO("VECCHIA POSA %f %f",a_vecio),b_vecio);
+   ^
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:244:41: error: expected ‘;’ before ‘,’ token
+   ROS_INFO("VECCHIA POSA %f %f",a_vecio),b_vecio);
+                                         ^
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:244:41: error: expected primary-expression before ‘,’ token
+CMakeFiles/turtlesim_node.dir/build.make:90: recipe for target 'CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o' failed
+make[2]: *** [CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o] Error 1
+CMakeFiles/Makefile2:104: recipe for target 'CMakeFiles/turtlesim_node.dir/all' failed
+make[1]: *** [CMakeFiles/turtlesim_node.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

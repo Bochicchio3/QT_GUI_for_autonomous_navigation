@@ -1,0 +1,1 @@
+/home/alfredo/turtlesim/devel/.private/turtlesim/share/roseus/ros/turtlesim/msg/Pose.l

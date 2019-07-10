@@ -1,0 +1,6 @@
+CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o: In function `turtlesim::Turtle::Turtle(ros::NodeHandle const&, QImage const&, QPointF const&, float)':
+turtle.cpp:(.text+0x7a5): undefined reference to `turtlesim::Turtle::poseCallback(boost::shared_ptr<geometry_msgs::Point_<std::allocator<void> > const> const&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/alfredo/turtlesim/devel/.private/turtlesim/lib/turtlesim/turtlesim_node] Error 1
+make[1]: *** [CMakeFiles/turtlesim_node.dir/all] Error 2
+make: *** [all] Error 2

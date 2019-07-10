@@ -1,0 +1,12 @@
+-I/home/alfredo/turtlesim/devel/.private/turtlesim/include
+-I/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/include
+-I/opt/ros/melodic/include
+-I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/usr/include
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="turtlesim"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/alfredo/turtlesim/build/turtlesim/include/turtlesim/moc_turtle_frame.cpp
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle_frame.h

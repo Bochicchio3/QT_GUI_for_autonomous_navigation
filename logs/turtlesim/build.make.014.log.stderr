@@ -1,0 +1,7 @@
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp: In member function ‘void turtlesim::Turtle::poseCallback(const ConstPtr&)’:
+/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:68:1: error: expected ‘;’ before ‘b’
+ b=point->y
+ ^
+make[2]: *** [CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o] Error 1
+make[1]: *** [CMakeFiles/turtlesim_node.dir/all] Error 2
+make: *** [all] Error 2
