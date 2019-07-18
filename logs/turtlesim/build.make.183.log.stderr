@@ -1,0 +1,22 @@
+In file included from [01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:30:0[m[K:
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:84:33:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   QString temp = QObject::tr("X");
+[01;32m[K                                 ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:90:12:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   double a=4;
+[01;32m[K            ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:91:12:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   double b=4;
+[01;32m[K            ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:92:12:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   double c=1.55;
+[01;32m[K            ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:95:23:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   double orientazione=0;
+[01;32m[K                       ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:96:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int a_vecio=0;
+[01;32m[K               ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:97:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int b_vecio=0;
+[01;32m[K               ^[m[K

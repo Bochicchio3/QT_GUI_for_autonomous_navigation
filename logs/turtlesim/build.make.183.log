@@ -1,0 +1,58 @@
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _turtlesim_generate_messages_check_deps_Spawn
+[  0%] Built target _turtlesim_generate_messages_check_deps_SetPen
+[  0%] Built target _turtlesim_generate_messages_check_deps_TeleportRelative
+[  0%] Built target _turtlesim_generate_messages_check_deps_Color
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target _turtlesim_generate_messages_check_deps_TeleportAbsolute
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _turtlesim_generate_messages_check_deps_Pose
+[  0%] Built target _turtlesim_generate_messages_check_deps_Kill
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[ 14%] Built target turtlesim_generate_messages_cpp
+[ 28%] Built target turtlesim_generate_messages_nodejs
+[ 28%] Built target std_msgs_generate_messages_lisp
+[ 46%] Built target turtlesim_generate_messages_py
+[ 46%] Built target turtlesim_gencpp
+[ 60%] Built target turtlesim_generate_messages_lisp
+[ 76%] Built target turtlesim_generate_messages_eus
+[35m[1mScanning dependencies of target turtlesim_node[0m
+[ 80%] Built target turtle_teleop_key
+[ 88%] Built target mimic
+[ 88%] Built target draw_square
+[ 88%] Built target turtlesim_generate_messages
+[ 90%] [32mBuilding CXX object CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o[0m
+In file included from [01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp:30:0[m[K:
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:84:33:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   QString temp = QObject::tr("X");
+[01;32m[K                                 ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:90:12:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   double a=4;
+[01;32m[K            ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:91:12:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   double b=4;
+[01;32m[K            ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:92:12:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   double c=1.55;
+[01;32m[K            ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:95:23:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   double orientazione=0;
+[01;32m[K                       ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:96:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int a_vecio=0;
+[01;32m[K               ^[m[K
+[01m[K/home/robot/turtlesim/src/ros_tutorials/turtlesim/include/turtlesim/turtle.h:97:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int b_vecio=0;
+[01;32m[K               ^[m[K
+[ 92%] [32m[1mLinking CXX executable /home/robot/turtlesim/devel/.private/turtlesim/lib/turtlesim/turtlesim_node[0m
+[100%] Built target turtlesim_node
