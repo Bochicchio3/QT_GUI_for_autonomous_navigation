@@ -120,7 +120,8 @@ void Turtle::paint(QPainter& painter)
  
  7. Static Interface and Text
  ```
- //DRAW THE INTERFACE INFORMATION: CURRENT WAYPOINT AND CURRENT POSITION
+ //DRAW THE INTERFACE INFORMATION: CURRENT WAYPOINT AND CURRENT POSITION.
+ //THE INTERFACE IS DRAWN IN THE DOWN-LEFT AND DOWN-RIGHT POSITION, UNDER THE BOUNDING BOX
 
   painter.setFont(QFont("Arial", 20/2));
   QRect rectangle1 = QRect(700/2, 1610/2, 400/2, 400/2);
@@ -141,7 +142,7 @@ void Turtle::paint(QPainter& painter)
   QString as3 = ")";
   as=ax.append(as.append(ay.append(as2.append(as3))));
  
- // HERE THE BOUNDING LINES ARE REALIZED
+ // DRAW THE BOUNDING BOX
 
   painter.drawText(rectangle1 ,s);
   painter.drawText(rectangle2 ,as);
