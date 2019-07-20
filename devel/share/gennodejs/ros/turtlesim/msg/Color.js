@@ -1,1 +1,1 @@
-/home/alfredo/turtlesim/devel/.private/turtlesim/share/gennodejs/ros/turtlesim/msg/Color.js
+/home/robot/turtlesim/devel/.private/turtlesim/share/gennodejs/ros/turtlesim/msg/Color.js

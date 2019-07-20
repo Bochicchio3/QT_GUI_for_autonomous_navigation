@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/draw_square.dir/tutorials/draw_square.cpp.o"
-  "/home/alfredo/turtlesim/devel/.private/turtlesim/lib/turtlesim/draw_square.pdb"
-  "/home/alfredo/turtlesim/devel/.private/turtlesim/lib/turtlesim/draw_square"
+  "/home/robot/turtlesim/devel/.private/turtlesim/lib/turtlesim/draw_square.pdb"
+  "/home/robot/turtlesim/devel/.private/turtlesim/lib/turtlesim/draw_square"
 )
 
 # Per-language clean rules from dependency scanning.

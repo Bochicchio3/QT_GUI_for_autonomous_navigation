@@ -1,10 +1,10 @@
 
 "use strict";
 
-let Color = require('./Color.js');
 let Pose = require('./Pose.js');
+let Color = require('./Color.js');
 
 module.exports = {
-  Color: Color,
   Pose: Pose,
+  Color: Color,
 };

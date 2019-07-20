@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/turtle_teleop_key.dir/tutorials/teleop_turtle_key.cpp.o"
-  "/home/alfredo/turtlesim/devel/.private/turtlesim/lib/turtlesim/turtle_teleop_key.pdb"
-  "/home/alfredo/turtlesim/devel/.private/turtlesim/lib/turtlesim/turtle_teleop_key"
+  "/home/robot/turtlesim/devel/.private/turtlesim/lib/turtlesim/turtle_teleop_key.pdb"
+  "/home/robot/turtlesim/devel/.private/turtlesim/lib/turtlesim/turtle_teleop_key"
 )
 
 # Per-language clean rules from dependency scanning.

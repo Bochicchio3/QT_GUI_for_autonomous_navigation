@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alfredo/turtlesim/build/turtlesim/include/turtlesim/moc_turtle_frame.cpp" "/home/alfredo/turtlesim/build/turtlesim/CMakeFiles/turtlesim_node.dir/include/turtlesim/moc_turtle_frame.cpp.o"
-  "/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp" "/home/alfredo/turtlesim/build/turtlesim/CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o"
-  "/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtle_frame.cpp" "/home/alfredo/turtlesim/build/turtlesim/CMakeFiles/turtlesim_node.dir/src/turtle_frame.cpp.o"
-  "/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/src/turtlesim.cpp" "/home/alfredo/turtlesim/build/turtlesim/CMakeFiles/turtlesim_node.dir/src/turtlesim.cpp.o"
+  "/home/robot/turtlesim/build/turtlesim/include/turtlesim/moc_turtle_frame.cpp" "/home/robot/turtlesim/build/turtlesim/CMakeFiles/turtlesim_node.dir/include/turtlesim/moc_turtle_frame.cpp.o"
+  "/home/robot/turtlesim/src/ros_tutorials/turtlesim/src/turtle.cpp" "/home/robot/turtlesim/build/turtlesim/CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o"
+  "/home/robot/turtlesim/src/ros_tutorials/turtlesim/src/turtle_frame.cpp" "/home/robot/turtlesim/build/turtlesim/CMakeFiles/turtlesim_node.dir/src/turtle_frame.cpp.o"
+  "/home/robot/turtlesim/src/ros_tutorials/turtlesim/src/turtlesim.cpp" "/home/robot/turtlesim/build/turtlesim/CMakeFiles/turtlesim_node.dir/src/turtlesim.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,21 +18,20 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_NO_DEBUG"
   "QT_WIDGETS_LIB"
   "ROSCONSOLE_BACKEND_LOG4CXX"
-  "ROS_BUILD_SHARED_LIBS=1"
   "ROS_PACKAGE_NAME=\"turtlesim\""
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/alfredo/turtlesim/devel/.private/turtlesim/include"
-  "/home/alfredo/turtlesim/src/ros_tutorials/turtlesim/include"
-  "/opt/ros/melodic/include"
-  "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/home/robot/turtlesim/devel/.private/turtlesim/include"
+  "/home/robot/turtlesim/src/ros_tutorials/turtlesim/include"
+  "/opt/ros/kinetic/include"
+  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"
   "/usr/include/x86_64-linux-gnu/qt5/QtCore"
-  "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+  "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"
   )
 
 # Targets to which this target links.

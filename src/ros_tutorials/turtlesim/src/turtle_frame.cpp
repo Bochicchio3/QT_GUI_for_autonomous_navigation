@@ -44,12 +44,12 @@ namespace turtlesim
 
 TurtleFrame::TurtleFrame(QWidget* parent, Qt::WindowFlags f)
 : QFrame(parent, f)
-, path_image_(1600, 1600, QImage::Format_ARGB32)
+, path_image_(1700/2, 1700/2, QImage::Format_ARGB32)
 , path_painter_(&path_image_)
 , frame_count_(0)
 , id_counter_(0)
 {
-  setFixedSize(1600, 1600);
+  setFixedSize(1700/2, 1700/2);
   setWindowTitle("TurtleSim");
 
   srand(time(NULL));
@@ -220,10 +220,10 @@ void TurtleFrame::paintEvent(QPaintEvent*)
 {
   QPainter painter2(this);
   QFont font = painter2.font();
-  font.setPixelSize(25);
+  font.setPixelSize(25/2);
   painter2.setFont(font);
-  const QRect rectangle1 = QRect(750, 750, 100, 50);
-  const QRect rectangle2 = QRect(790, 790, 300, 300);
+  const QRect rectangle1 = QRect(750/2, 750/2, 100/2, 50/2);
+  const QRect rectangle2 = QRect(790/2, 790/2, 300/2, 300/2);
 
   QRect boundingRect;
   painter2.drawText(rectangle1, 0, tr("."), &boundingRect);

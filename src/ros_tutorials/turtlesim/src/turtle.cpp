@@ -31,6 +31,8 @@
 
 #include <QColor>
 #include <QRgb>
+#include <cmath>
+
 
 #define DEFAULT_PEN_R 0xb3
 #define DEFAULT_PEN_G 0xb8
@@ -57,7 +59,7 @@ Turtle::Turtle(const ros::NodeHandle& nh, const QImage& turtle_image, const QPoi
   set_pen_srv_ = nh_.advertiseService("set_pen", &Turtle::setPenCallback, this);
   teleport_relative_srv_ = nh_.advertiseService("teleport_relative", &Turtle::teleportRelativeCallback, this);
   teleport_absolute_srv_ = nh_.advertiseService("teleport_absolute", &Turtle::teleportAbsoluteCallback, this);
-  pose_sub=nh_.subscribe("posa", 1, &Turtle::poseCallback, this);
+  pose_sub=nh_.subscribe("tag_pose0", 1, &Turtle::poseCallback, this);
   waypoint_sub=nh_.subscribe("waypoint_publisher", 1, &Turtle::waypointCallback, this);
   orientation_sub=nh_.subscribe("orientation", 1, &Turtle::orientationCallback, this);
 
@@ -67,8 +69,8 @@ Turtle::Turtle(const ros::NodeHandle& nh, const QImage& turtle_image, const QPoi
 
 void Turtle::waypointCallback(const geometry_msgs::Point::ConstPtr& point2)
 {
-wayx=point2->x;
-wayy=point2->y;
+wayx=point2->x/10;
+wayy=point2->y/10;
 
 
 
@@ -77,16 +79,15 @@ wayy=point2->y;
 void Turtle::orientationCallback(const geometry_msgs::Point::ConstPtr& point2)
 {
 
-orientazione=point2->z;
+orientazione=-point2->z;
 }
 
 void Turtle::poseCallback(const geometry_msgs::Point::ConstPtr& point)
 {
-
-a=point->x;
-b=point->y;
-ROS_INFO("Spawning at position x=[%f], y=[%f]", a,b);
-
+if (point->x ==0 &&  point->y==0){return;}
+if (pow((point->x+point->y)/10,2)-pow((a+b)/10,2)<500){return;}
+a=point->x/10;
+b=point->y/10;
 }
 
 
@@ -214,7 +215,7 @@ bool Turtle::update(double dt, QPainter& path_painter, const QImage& path_image,
     {
 
       path_painter.setPen(pen_);
-      path_painter.drawLine(pos_ , old_pos);
+      path_painter.drawLine(a+xrelativa,-b+yrelativa, a_vecio+xrelativa,-b_vecio+yrelativa );
       ROS_INFO("DISEGNOSTOaltroCAZZO");
 
     }
@@ -227,30 +228,30 @@ bool Turtle::update(double dt, QPainter& path_painter, const QImage& path_image,
 void Turtle::paint(QPainter& painter)
 {
   QPointF p(a,b);
-  orient_ =orientazione;
+  orient_ =orientazione -3*PI/2;
   // Keep orient_ between -pi and +pi
   orient_ -= 2*PI * std::floor((orient_ + PI)/(2*PI));
   a_vecio=pos_.rx();
   b_vecio=pos_.ry();
   pos_.rx() = a;
   pos_.ry() = b;
-  painter.drawLine(a,b, a_vecio,b_vecio );
+  painter.drawLine(a+xrelativa,-b+yrelativa, a_vecio+xrelativa,-b_vecio+yrelativa );
   rotateImage();
 
   // p.rx() -= 0.5 * turtle_rotated_image_.width();
   // p.ry() -= 0.5 * turtle_rotated_image_.height();
 
-  painter.drawImage(a,b, turtle_rotated_image_);
-  painter.drawEllipse(int(wayx),int(wayy), 100, 100);
-  painter.setFont(QFont("Arial", 20));
-  QRect rectangle1 = QRect(int(wayx)+100, int(wayy)+100, 400, 400);
+  painter.drawImage(a+xrelativa,-b+yrelativa, turtle_rotated_image_);
+  painter.drawEllipse(int(wayx)+xrelativa,-int(wayy)+yrelativa, 100/2, 100/2);
+  painter.setFont(QFont("Arial", 20/2));
+  QRect rectangle1 = QRect(700/2, 1610/2, 400/2, 400/2);
   QString s = QString::number(wayx);
   QString s2 = QString::number(wayy);
   QString x = "Current waypoint: (";
   QString y = ",";
   QString s3 = ")";
   s=x.append(s.append(y.append(s2.append(s3))));
-  QRect rectangle2 = QRect(int(a)+100, int(b)+100, 400, 400);
+  QRect rectangle2 = QRect(100/2, 1610/2, 400/2, 400/2);
   QString as = QString::number(a);
   QString as2 = QString::number(b);
   QString ax = "Current position: (";
@@ -260,6 +261,13 @@ void Turtle::paint(QPainter& painter)
   // Qstring textfinale=  text.append(s.append(text3.append(s2.append(text2))));
   painter.drawText(rectangle1 ,s);
   painter.drawText(rectangle2 ,as);
+  painter.drawLine(100/2,1600/2,1600/2,1600/2);
+    painter.drawLine(1600/2,100/2,1600/2,1600/2);
+      painter.drawLine(100/2,100/2,100/2,1600/2);
+        painter.drawLine(1600/2,100/2,100/2,100/2);
+  QRect rectangle3 = QRect(1300/2, 1610/2, 400/2, 400/2);
+  QString as33 = "Width: 7m x 7m";
+  painter.drawText(rectangle3 ,as33);
 
 }
 

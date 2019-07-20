@@ -1,1 +1,1 @@
-/home/alfredo/turtlesim/devel/.private/turtlesim/share/common-lisp/ros/turtlesim/msg/turtlesim-msg.asd
+/home/robot/turtlesim/devel/.private/turtlesim/share/common-lisp/ros/turtlesim/msg/turtlesim-msg.asd

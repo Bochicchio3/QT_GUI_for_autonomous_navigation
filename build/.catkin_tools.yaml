@@ -1,6 +1,6 @@
-devel_space: /home/alfredo/turtlesim/devel
+devel_space: /home/robot/turtlesim/devel
 install: false
-install_space: /home/alfredo/turtlesim/install
+install_space: /home/robot/turtlesim/install
 profile: default
-source_space: /home/alfredo/turtlesim/src
-workspace: /home/alfredo/turtlesim
+source_space: /home/robot/turtlesim/src
+workspace: /home/robot/turtlesim

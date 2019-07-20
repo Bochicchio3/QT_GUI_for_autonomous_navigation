@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mimic.dir/tutorials/mimic.cpp.o"
-  "/home/alfredo/turtlesim/devel/.private/turtlesim/lib/turtlesim/mimic.pdb"
-  "/home/alfredo/turtlesim/devel/.private/turtlesim/lib/turtlesim/mimic"
+  "/home/robot/turtlesim/devel/.private/turtlesim/lib/turtlesim/mimic.pdb"
+  "/home/robot/turtlesim/devel/.private/turtlesim/lib/turtlesim/mimic"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,1 +1,1 @@
-/home/alfredo/turtlesim/devel/.private/turtlesim/share/roseus/ros/turtlesim/manifest.l
+/home/robot/turtlesim/devel/.private/turtlesim/share/roseus/ros/turtlesim/manifest.l

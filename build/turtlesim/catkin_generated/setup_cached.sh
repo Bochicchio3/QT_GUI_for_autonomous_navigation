@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/alfredo/turtlesim/devel/.private/turtlesim:$CMAKE_PREFIX_PATH"
-export PWD="/home/alfredo/turtlesim/build/turtlesim"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/alfredo/turtlesim/devel/.private/turtlesim/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/alfredo/turtlesim/src/ros_tutorials/turtlesim:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/robot/turtlesim/devel/.private/turtlesim:$CMAKE_PREFIX_PATH"
+export PWD="/home/robot/turtlesim/build/turtlesim"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/robot/turtlesim/devel/.private/turtlesim/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/robot/turtlesim/src/ros_tutorials/turtlesim:$ROS_PACKAGE_PATH"
