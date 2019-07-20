@@ -157,6 +157,19 @@ void Turtle::paint(QPainter& painter)
 ```
 
 
+ ## turtleframe.cpp
  
- 
+ In this code you can find the information relative to the graphical interface. Specifically, you will only need to modify the resolution, width and heigth of the interface.
+ ```
+  // MODIFY HERE DEPENDING ON THE DESIRED RESOLUTION
+  setFixedSize(1700/2, 1700/2);
+  setWindowTitle("ROVER_GUI");
+```
+
+and 
+
+```
+path_image_(1700/2, 1700/2, QImage::Format_ARGB32)
+
+```
  
