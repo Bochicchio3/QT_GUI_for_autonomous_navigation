@@ -62,7 +62,6 @@ Here you can define:
  
  This is where ros is initialized and the main is defined. Do not modify.
  
- ## turtle_frame.cpp
  
  ## turtle.cpp
  
@@ -159,7 +158,8 @@ void Turtle::paint(QPainter& painter)
 
  ## turtleframe.cpp
  
- In this code you can find the information relative to the graphical interface. Specifically, you will only need to modify the resolution, width and heigth of the interface.
+ In this code you can find the information relative to the graphical interface. Specifically, you will only need to modify the resolution, width and heigth of the interface, and eventually, the desired png image.
+The image has to be png with transparent background if you want to visualize it correctly.
  ```
   // MODIFY HERE DEPENDING ON THE DESIRED RESOLUTION
   setFixedSize(1700/2, 1700/2);
@@ -172,4 +172,16 @@ and
 path_image_(1700/2, 1700/2, QImage::Format_ARGB32)
 
 ```
+
+Moreover, you if you ever need to modify the graphical interface, just modify here:
+```
+ turtles.append("car.png");
+```
  
+ Last modification is about the Virtual dimension of the interface. 
+ ```
+//MODIFY HERE FOR DESIRED HEIGHT AND WIDTH IN METERS
+  width_in_meters_ = 7.5;
+  height_in_meters_ = 7.5;
+```
+
